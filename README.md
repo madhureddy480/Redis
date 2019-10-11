@@ -4,7 +4,7 @@ Redis Server Cluster {3 server nodes}.
 # Redis
 ##### 1. install docker container on your pc. change preference for better performance.
 
-##### 2. go download https://github.com/viragtripathi/redis-enterprise-docker.git
+##### 2. go download zip https://github.com/madhureddy480/redis-enterprise-docker-imported and unzip the file.
 ##### 3. edit create_redis_enterprise_3_node_cluster.sh file to your settings..like below.
 ```
 #!/bin/bash
