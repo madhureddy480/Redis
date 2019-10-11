@@ -17,6 +17,7 @@ sudo docker kill re-node3;sudo docker rm re-node3;
 echo "Starting Redis Enterprise as Docker containers..."
 sudo docker run -d --cap-add sys_resource -h re-node1 --name re-node1 -p 18443:8443 -p 19443:9443 -p 14000-14005:12000-12005 -p 18070:8070 redislabs/redis:latest
        # by Madhu - Server Node 1 is created using a docker image. this Server is available at host18443.
+       # by Madhu - what are all these ports :? --see here: https://docs.redislabs.com/latest/rs/administering/designing-production/networking/port-configurations/
 sudo docker run -d --cap-add sys_resource -h re-node2 --name re-node2 -p 28443:8443 -p 29443:9443 -p 12010-12015:12000-12005 -p 28070:8070 redislabs/redis:latest
        # by Madhu - Server Node 2 is created using a docker image. this Server is available at host28443.
 sudo docker run -d --cap-add sys_resource -h re-node3 --name re-node3 -p 38443:8443 -p 39443:9443 -p 12020-12025:12000-12005 -p 38070:8070 redislabs/redis:latest
