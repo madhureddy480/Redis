@@ -63,13 +63,17 @@ to access bash of node 3:
 ```
 madhusudhans-MacBook-Pro:~ madhusudhankarnati$ docker exec -it re-node1 bash
 ```
-##### take a note of ports.. 
-##### docker container ports are already mapped to host operating system ports.
 
-##### by now.. your Redis cluster is already up and running with three nodes and one database. 
+take a note of ports.. 
 
-##### access cluster at port 8443 (with in the docker) and localhost:18443 or :28443 or :38443 at your host O.S. (see the above sh file)
-##### access database at port 12000 (with in the docker) and localhost:14000 at your host O.S (see below 12000/tcp is listening traffic from 0.0.0.0:14000)
+ docker container ports are already mapped to host operating system ports.
+
+ by now.. your Redis cluster is already up and running with three nodes and one database. 
+
+ access cluster at port 8443 (with in the docker) and localhost:18443 or :28443 or :38443 at your host O.S. (see the above sh file)
+
+access database at port 12000 (with in the docker) and localhost:14000 at your host O.S (see below 12000/tcp is listening traffic from 0.0.0.0:14000)
+
 ```
 madhusudhans-MacBook-Pro:~ madhusudhankarnati$ docker port re-node1
 8443/tcp -> 0.0.0.0:18443
